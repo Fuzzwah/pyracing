@@ -98,19 +98,24 @@ URL_ALL_SUBSESSIONS = (mSite + '/GetAllSubsessions')
 #                    '&subject=Email%20Subject'
 #                    '&text=Test%20for%20coding%20purposes'
 #                    '&leagueID=1056')
-# URL_LEAGUE_SEASONS = (mSite + '/GetLeagueSeasons'
-#                       'leagueID=1056')
+
+# Only parameter is a leagueID
+URL_LEAGUE_SEASONS = (mSite + '/GetLeagueSeasons')
 # URL_LEAGUE_CALENDAR_SEASON = (mSite + '/GetLeagueCalendarBySeason'
 #                               'leagueID=1056'
 #                               '&leagueSeasonID=46493')
 # URL_LEAGUE_SEASON_TEAM_STANDINGS = (mSite + '/GetLeagueSeasonTeamStandings'
 #                                     'leagueID=1056'
 #                                     '&leagueSeasonID=46493')
-# URL_LEAGUE_SEASON_STANDINGS = (mSite + '/GetLeagueSeasonStandings'
-#                                'leagueID=1056'
-#                                '&leagueSeasonID=46493'
-#                                '&carClassID=1450'
-#                                '&carID=0')
+
+
+# Parameters: leagueID, leagueSeasonID, carClassID, carID
+# only first 2 required
+URL_LEAGUE_SEASON_STANDINGS = (mSite + '/GetLeagueSeasonStandings')
+
+# Required param leagueid
+URL_LEAGUE = (mSite + '/GetLeague')
+
 # URL_LEAGUE_ICALENDAR_SUBSCRIBE = (mSite + '/GetICalendarForLeague'
 #                                   'leagueId=1056'
 #                                   '&leagueSeasonId=46493')
